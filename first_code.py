@@ -29,7 +29,7 @@ while counter == 0:
         forward()
     RPL.digitalRead(17)
 
-    elif obstacle == 0:
+    if obstacle == 0:
         stop()
         
     else:
