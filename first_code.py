@@ -25,11 +25,11 @@ while counter == 0:
 
     RPL.digitalRead(17)
 
-    if obstacle = 1:
+    if obstacle == 1:
         forward()
     RPL.digitalRead(17)
 
-    elif obstacle = 0:
+    elif obstacle == 0:
         stop()
         
     else:
