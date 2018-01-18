@@ -21,7 +21,7 @@ def stop():
   RPL.servoWrite(motorL, 0)
   RPL.servoWrite(motorR, 0)
 
-while counter = 0:
+while counter == 0:
 
     RPL.digitalRead(17)
 
