@@ -1,5 +1,5 @@
-from robotonomy import setup
-from robotonomy import RoboPiLib as RPL
+import setup
+import RoboPiLib as RPL
 
 motorL = 0
 motorR = 1
