@@ -9,7 +9,6 @@ motorR_backward = 1000
 motorL_forward = 1000
 motorL_backward = 2000
 
-obstacle = RPL.digitalRead(17)
 
 counter = 0
 
@@ -22,11 +21,15 @@ def stop():
   RPL.servoWrite(motorR, 0)
 
 while counter == 0:
+  
+    obstacle = RPL.digitalRead(17)
 
     RPL.digitalRead(17)
 
     if obstacle == 1:
+      
         forward()
+        
     if obstacle == 0:
         stop()
         counter = counter + 1
