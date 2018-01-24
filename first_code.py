@@ -22,9 +22,9 @@ def stop():
 
 while counter == 0:
   
-    obstacle = RPL.digitalRead(17)
-
     RPL.digitalRead(17)
+  
+    obstacle = RPL.digitalRead(17)
 
     if obstacle == 1:
       
