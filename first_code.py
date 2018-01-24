@@ -30,7 +30,4 @@ while counter == 0:
         RPL.digitalRead(17)
     if obstacle == 0:
         stop()
-        
-        
-    else:
         RPL.digitalRead(17)
