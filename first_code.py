@@ -27,10 +27,9 @@ while counter == 0:
 
     if obstacle == 1:
         forward()
-    RPL.digitalRead(17)
-
-    if obstacle == 0:
-        stop()
+        RPL.digitalRead(17)
+        if obstacle == 0:
+            stop()
         
     else:
         RPL.digitalRead(17)
