@@ -35,10 +35,10 @@ while counter == 0:
     if obstacle == 0:
         RPL.servoWrite(motorL,1580)
         RPL.servoWrite(motorR,1580)
-        time.sleep(0.1)
+        time.sleep(1)
         RPL.servoWrite(motorL,1510)
         RPL.servoWrite(motorR,1510)
-        time.sleep(0.1)
+        time.sleep(1)
         RPL.servoWrite(motorL,0)
         RPL.servoWrite(motorR,0)
 
