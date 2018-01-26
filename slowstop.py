@@ -1,5 +1,6 @@
 import setup
 import RoboPiLib as RPL
+import time
 
 motorL = 0
 motorR = 1
@@ -32,8 +33,15 @@ while counter == 0:
         forward()
 
     if obstacle == 0:
-        RPL.servoWrite(motorL,1500)
-        RPL.servoWrite(motorR,1500)
-        
+        RPL.servoWrite(motorL,1580)
+        RPL.servoWrite(motorR,1580)
+        time.sleep(0.1)
+        RPL.servoWrite(motorL,1510)
+        RPL.servoWrite(motorR,1510)
+        time.sleep(0.1)
+        RPL.servoWrite(motorL,0)
+        RPL.servoWrite(motorR,0)
+
+
         stop()
         counter = counter + 1
