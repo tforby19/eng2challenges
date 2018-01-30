@@ -37,7 +37,7 @@ while counter == 0:
         RPL.servoWrite(motorL,1420)
         RPL.servoWrite(motorR,1580)
 
-        if round(time.time(),0) - time1 == 1:
+        if round(time.time() - time1,0) == 1:
             time2 = time.time()
             RPL.servoWrite(motorL,1470)
             RPL.servoWrite(motorR,1530)
