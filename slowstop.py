@@ -33,19 +33,20 @@ while counter == 0:
         forward()
 
     if obstacle == 0:
-        time.sleep(1)
         RPL.servoWrite(motorL,1420)
         RPL.servoWrite(motorR,1580)
-
-        time.sleep(1)
+        time.sleep(.5)
+        RPL.servoWrite(motorL,1440)
+        RPL.servoWrite(motorR,1560)
+        time.sleep(.5)
         RPL.servoWrite(motorL,1470)
         RPL.servoWrite(motorR,1530)
-
-        time.sleep(1)
-
+        time.sleep(.5)
+        RPL.servoWrite(motorL,1480)
+        RPL.servoWrite(motorR,1520)
+        time.sleep(.5)
         RPL.servoWrite(motorL,1490)
         RPL.servoWrite(motorR,1510)
-
         time.sleep(1)
 
         stop()
