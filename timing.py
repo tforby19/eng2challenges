@@ -34,7 +34,7 @@ def power():
     on_off = on/off % 2
 
 def run():
-    threading.timer(1.0, run).start #goes through it every second
+    threading.Timer(1.0, run).start #goes through it every second
     motor()
     power()
 
