@@ -30,8 +30,8 @@ def motor():
         forward()
 
 def power():
-    on_off = on/off + 1
-    on_off = on/off % 2
+    on_off = on_off + 1
+    on_off = on_off % 2
 
 def run():
     threading.Timer(1.0, run).start #goes through it every second
