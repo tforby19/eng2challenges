@@ -23,10 +23,10 @@ def stop():
   RPL.servoWrite(motorL, 0)
   RPL.servoWrite(motorR, 0)
 
-def motor():
-    if on_off == 0:
+def motor(x):
+    if x == 0:
         stop()
-    if on_off == 1:
+    if x == 1:
         forward()
 
 
