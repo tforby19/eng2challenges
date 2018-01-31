@@ -29,13 +29,17 @@ def motor():
     if on_off == 1:
         forward()
 
+
 def power():
+    global on_off
     on_off = on_off + 1
     on_off = on_off % 2
+    return on_off
 
 def run():
     threading.Timer(1.0, run).start #goes through it every second
-    motor()
-    power()
+    x = power()
+    motor(x)
+
 
 run()
