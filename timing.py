@@ -13,7 +13,7 @@ motorL_backward = 2000
 
 counter = 0
 
-on/off = 0
+on_off = 0
 
 def forward():
   RPL.servoWrite(motorL,motorL_forward)
@@ -24,18 +24,18 @@ def stop():
   RPL.servoWrite(motorR, 0)
 
 def motor():
-    if on/off == 0:
+    if on_off == 0:
         stop()
-    if on/off == 1:
+    if on_off == 1:
         forward()
 
 def power():
-    on/off = on/off + 1
-    on/off = on/off % 2
+    on_off = on/off + 1
+    on_off = on/off % 2
 
 def run():
     threading.timer(1.0, run).start #goes through it every second
     motor()
     power()
-    
+
 run()
