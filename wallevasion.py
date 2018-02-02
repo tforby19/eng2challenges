@@ -44,6 +44,5 @@ while counter == 0:
     if front_obstacle == 0:
         turnL()
 
-    if right_obstacle = 0:
+    if right_obstacle == 0:
         turnL()
-    
