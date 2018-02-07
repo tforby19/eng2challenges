@@ -31,11 +31,11 @@ while counter == 0:
     wallR = RPL.digitalRead(16)
     wallF = RPL.digitalRead(17)
 
-    if wallF == 0 or wallF == 0 and wallR == 1:
+    if wallF == 0:
         turnL()
 
     if wallR == 0: #something is there
         turnL()
 
-    else: #nothing is there
+    if wallF == 1 and wallR == 1: #nothing is there
         turnR()
