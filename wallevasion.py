@@ -22,12 +22,12 @@ def stop():
   RPL.servoWrite(motorR, 0)
 
 def turnL():
-      RPL.servoWrite(motorL,1450)
+      RPL.servoWrite(motorL,1480)
       RPL.servoWrite(motorR,motorR_forward)
 
 def turnR():
       RPL.servoWrite(motorL,motorL_forward)
-      RPL.servoWrite(motorR, 1550)
+      RPL.servoWrite(motorR, 1520)
 
 
 
