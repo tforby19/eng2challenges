@@ -28,9 +28,12 @@ def turnR():
       RPL.servoWrite(motorR, 1540)
 
 while counter == 0:
-    wall = RPL.digitalRead(16)
+    wallR = RPL.digitalRead(16)
+    wallF = RPL.digitalRead(17)
 
-    if wall == 1: #nothing is there
+    if wallF == 0:
+        turnL()
+    if wallR == 1: #nothing is there
         turnR()
-    if wall == 0: #something is there
+    if wallR == 0: #something is there
         turnL()
