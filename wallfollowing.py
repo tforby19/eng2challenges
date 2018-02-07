@@ -9,7 +9,6 @@ motorR_backward = 1000
 motorL_forward = 1000
 motorL_backward = 2000
 
-
 counter = 0
 
 def forward():
@@ -28,20 +27,9 @@ def turnR():
       RPL.servoWrite(motorL,motorL_forward)
       RPL.servoWrite(motorR, 1520)
 
-
-
 while counter == 0:
-
-
-    front_obstacle = RPL.digitalRead(17)
-    right_obstacle = RPL.digitalRead(16)
-    left_obstacle = RPL.digitalRead(18)
-
-    if front_obstacle == 1:
-        forward()
-
-    if front_obstacle == 0:
-        turnL()
-
-    if right_obstacle == 0:
-        turnL()
+    wall = RPL.digitalRead(16)
+    if wall == 1: #nothing is there
+        turnR()
+    if wall == 0: #something is there
+        turnL
