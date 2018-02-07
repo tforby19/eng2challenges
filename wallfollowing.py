@@ -33,7 +33,9 @@ while counter == 0:
 
     if wallF == 0:
         turnL()
-    if wallR == 1: #nothing is there
-        turnR()
+
     if wallR == 0: #something is there
         turnL()
+
+    else: #nothing is there
+        turnR()
