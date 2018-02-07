@@ -20,12 +20,12 @@ def stop():
   RPL.servoWrite(motorR, 0)
 
 def turnL():
-      RPL.servoWrite(motorL,1480)
+      RPL.servoWrite(motorL,1460)
       RPL.servoWrite(motorR,motorR_forward)
 
 def turnR():
       RPL.servoWrite(motorL,motorL_forward)
-      RPL.servoWrite(motorR, 1520)
+      RPL.servoWrite(motorR, 1540)
 
 while counter == 0:
     wall = RPL.digitalRead(16)
