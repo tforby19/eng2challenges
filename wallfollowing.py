@@ -29,7 +29,8 @@ def turnR():
 
 while counter == 0:
     wall = RPL.digitalRead(16)
+
     if wall == 1: #nothing is there
         turnR()
     if wall == 0: #something is there
-        turnL
+        turnL()
