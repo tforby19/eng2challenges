@@ -21,15 +21,15 @@ def stop():
   RPL.servoWrite(motorR, 0)
 
 while counter == 0:
-  
+
     RPL.digitalRead(17)
-  
+
     obstacle = RPL.digitalRead(17)
 
     if obstacle == 1:
-      
+
         forward()
-        
+
     if obstacle == 0:
         stop()
         counter = counter + 1
